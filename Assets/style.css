@@ -1,0 +1,157 @@
+.navbar, 
+.navbar-expand-sm, 
+.navbar-light,
+.bg-light {
+    color: #F2EBEC!important;
+    background-color: #F2EBEC!important;
+}
+
+nav a:hover {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #F2D0A7;
+    font-size: 1.1rem;
+}
+
+.btn {
+    background-color: #F2D0A7;
+    border: #F2D0A7;
+    color: #2182BF;
+}
+
+.btn:hover {
+    background-color: #2182BF;  
+    color: #2182BF;
+}
+
+#home {
+    background: url(../Assets/Images/hero-ducks.JPG);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#homeMiddle {
+    margin-right: auto;
+    margin-left: 20%;
+    position: absolute;
+    top: 45%;
+}
+
+#hello {
+    color: #F2EBEC;
+    font-family: 'Amatic SC', cursive;
+}
+
+#name {
+    color: #F2EBEC;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #56738C;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#portfolio {
+    background: #F2EBEC;
+}
+
+#portfolio a:hover {
+    color: #F2D0A7;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#portfolio a:link {
+    color: #2182BF;
+}
+
+small {
+    font-style: italic;
+}
+
+.card-title,
+.card-text {
+    padding-left: 1.25rem;
+}
+
+.gitLinks {
+    bottom: 0;
+}
+
+h2 {
+    color: #2182BF;
+    font-size: 3rem;
+    font-family: 'Volkhov', serif;
+}
+
+#about {
+    background: #56738C;
+    color: #F2EBEC;
+}
+
+#about p {
+    font-size: 16px;
+}
+
+#about img {
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Volkhov', serif;
+}
+
+#contact {
+    background:#56738C;
+    font-size: 20px;
+    color: #343840;
+}
+
+#contact a {
+    color: #F2D0A7;
+    text-decoration: gray;
+}
+
+#contact a:hover {
+    text-transform: uppercase;
+}
+
+a:link {
+    color: #56738C;
+    text-decoration: none;
+}
+
+a:active {
+    color: #56738C;
+}
+
+a:hover {
+    color: #F2D0A7;
+    text-size-adjust: 2rem;
+}
+
+a:visited {
+    color: #56738C;
+}
+
+p,
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    #homeMiddle {
+        margin-right: auto;
+        margin-left: 0%;
+        top: 45%;
+    }
+
+    #name {
+        font-size: 66px;
+    }
+}
+
