@@ -160,6 +160,7 @@ h1 {
 
 #portfolio {
     background: #F2EBEC;
+    margin-bottom: 50px;
 }
 
 #portfolio h3 {
@@ -190,29 +191,51 @@ small {
     padding-left: 1.25rem;
 }
 
-.gitLinks {
-    bottom: 0;
+h2 {
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
 }
 
-h2 {
-    color: #2182BF;
-    font-size: 3rem;
-    font-family: 'Volkhov', serif;
+#words {
+    text-decoration: underline;
+}
+
+#thankYou {
+    background-color: #56738C;
+    display: flex;
+    padding: 80px 30px;
+    padding-bottom: 160px;
+    justify-content: center;
 }
 
 #contact {
-    background:#56738C;
+    text-align: center;
+    background:#23303a;
+    margin: auto;
     font-size: 20px;
-    color: #343840;
+    color: #F2EBEC;
+    transform: translateY(-100px);
+    width: 85%;
+    padding: 30px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
+    min-height: 200px;
+}
+
+#contact i {
+    font-size: 35px;
+    padding: 30px;
 }
 
 #contact a {
-    color: #F2D0A7;
+    color:#F2EBEC;
     text-decoration: gray;
 }
 
 #contact a:hover {
-    text-transform: uppercase;
+    color: #56738C;
 }
 
 a:link {
@@ -220,21 +243,20 @@ a:link {
     text-decoration: none;
 }
 
-/* a:active {
-    color: #56738C;
-} */
-
 a:hover {
     color: #56738C;
 }
 
-/* a:visited {
-    color: #56738C;
-} */
-
 p,
 a {
     font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    color: #56738C;
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
