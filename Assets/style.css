@@ -104,13 +104,25 @@ h1 {
     justify-content: center;
 }
 
-.skills i {
+.skills h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #56738C;
     padding-bottom: 20px;
+}
+
+.skills i {
+    padding-top: 10px;
+    padding-bottom: 25px;
     color: #56738C;
 }
 
+#skillsIcon {
+    padding-top: 20px;
+    font-size: 45px;
+}
+
 .skillsCard {
-    width: 40%;
+    width: 80%;
     min-height: 400px;
     padding: 30px;
     margin: 10px;
