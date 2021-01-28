@@ -25,7 +25,7 @@ header {
 #intro {
     width: 100%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 8%;
     color: #56738C;
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
@@ -136,6 +136,10 @@ h1 {
     background-color: #F2EBEC;
 }
 
+.portfolio {
+    width: 100%;
+}
+
 .btn {
     background-color: #F2D0A7;
     border: #F2D0A7;
@@ -221,15 +225,19 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
-    #homeMiddle {
-        margin-right: auto;
-        margin-left: 0%;
-        top: 45%;
+@media (min-width: 320px) and (max-width: 650px) {
+    header {
+        margin-bottom: 50px;
     }
-
-    #name {
-        font-size: 66px;
+    #intro {
+        margin-top: 20px;
+    }
+    #introLines {
+        margin-top: 70px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 60px;
     }
 }
 
