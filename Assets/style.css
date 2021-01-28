@@ -14,7 +14,6 @@ html, body {
 nav a:hover {
     text-transform: uppercase;
     font-weight: 500;
-    color: #F2D0A7;
     font-size: 1.1rem;
 }
 
@@ -47,7 +46,7 @@ header {
     left: 50%;
 }
 
-.arrow a {
+a {
     color: #56738C;
 }
 
@@ -136,8 +135,17 @@ h1 {
     background-color: #F2EBEC;
 }
 
-.portfolio {
+#portfolio {
     width: 100%;
+}
+
+#portfolio h1 {
+    color: #56738C;
+}
+
+#portfolio h4 {
+    color: #afbdc9;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -154,14 +162,16 @@ h1 {
     background: #F2EBEC;
 }
 
+#portfolio h3 {
+    font-size: 30px;
+    font-family: 'Volkhov', serif;
+    color: #56738C;
+}
+
 #portfolio a:hover {
     color: #F2D0A7;
     text-transform: uppercase;
     background-color: #2182BF;
-}
-
-#portfolio a:link {
-    color: #2182BF;
 }
 
 small {
@@ -183,10 +193,7 @@ h2 {
     font-family: 'Volkhov', serif;
 }
 
-.project h3 {
-    font-size: 30px;
-    font-family: 'Volkhov', serif;
-}
+
 
 #contact {
     background:#56738C;
