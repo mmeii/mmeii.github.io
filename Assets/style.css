@@ -141,7 +141,13 @@ h1 {
 }
 
 #portfolio {
-    width: 100%;
+    min-width: 100%;
+    padding-right: 60px!important;
+    padding-left: 60px!important;
+}
+
+small {
+    padding-top: 5px!important;
 }
 
 #portfolio h1 {
@@ -151,6 +157,10 @@ h1 {
 #portfolio h4 {
     color: #afbdc9;
     margin-bottom: 50px;
+}
+
+.gitLinks {
+    bottom: 0;
 }
 
 .btn {
@@ -282,6 +292,11 @@ footer {
     }
     h1 {
         font-size: 60px;
+    }
+
+    #portfolio {
+        padding-right: 15px!important;
+        padding-left: 15px!important;
     }
 }
 
