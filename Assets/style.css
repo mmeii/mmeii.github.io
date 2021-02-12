@@ -179,9 +179,10 @@ small {
 }
 
 #portfolio h3 {
-    font-size: 30px;
+    font-size: 29px;
     font-family: 'Volkhov', serif;
     color: #56738C;
+    padding-left: 17px!important;
 }
 
 #portfolio a:hover {
