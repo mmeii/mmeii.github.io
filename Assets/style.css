@@ -1,303 +1,315 @@
-html, body {
-    background-color: #F2EBEC;
-    height: 100%;
+html,
+body {
+	background-color: #f2ebec;
+	/* height: 100%; */
+	overflow: hidden;
 }
 
-.navbar, 
-.navbar-expand-sm, 
+.navbar,
+.navbar-expand-sm,
 .navbar-light,
 .bg-light {
-    color: #F2EBEC!important;
-    background-color: #F2EBEC!important;
+	color: #f2ebec !important;
+	background-color: #f2ebec !important;
 }
 
 nav a {
-    color: #afbdc9!important;
+	color: #afbdc9 !important;
 }
 
 nav a:hover {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: #41586b!important;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.1rem;
+	color: #41586b !important;
 }
 
 header {
-    margin-bottom: 100px;;
+	margin-bottom: 100px;
 }
 
 #intro {
-    width: 100%;
-    margin: auto;
-    padding-top: 8%;
-    color: #56738C;
-    font-family: 'Raleway', sans-serif;
-    min-height: 100vh;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding-top: 8%;
+	color: #56738c;
+	font-family: "Raleway", sans-serif;
+	min-height: 100vh;
 }
 
 @keyframes bouncing {
-    0% {bottom: 0;}
-    50% {bottom: 20px;}
-    100% {bottom: 0;}
+	0% {
+		bottom: 0;
+	}
+	50% {
+		bottom: 20px;
+	}
+	100% {
+		bottom: 0;
+	}
 }
 
 .arrow {
-    font-size: x-large;
-    text-align: center;
-    animation: bouncing 1s infinite ease-in-out;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    left: 50%;
+	font-size: x-large;
+	text-align: center;
+	animation: bouncing 1s infinite ease-in-out;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	left: 50%;
 }
 
 a {
-    color: #56738C;
+	color: #56738c;
 }
 
 h1 {
-    font-size: 70px;
-    color: #afbdc9;
-    font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	color: #afbdc9;
+	font-family: "Roboto", sans-serif;
 }
 
 #mei {
-    color: #41586b;
-    font-weight: 1000;
+	color: #41586b;
+	font-weight: 1000;
 }
 
 #intro h4 {
-    margin-top: -10px;
-    margin-bottom: -10px;
+	margin-top: -10px;
+	margin-bottom: -10px;
 }
 
 #intro img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
 }
 
 .subtitle {
-    font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 #introLines {
-    margin: auto;
+	margin: auto;
 }
 
 #about {
-    background-color: #56738C;
-    color: #F2EBEC;
-    display: flex;
-    padding: 100px 30px;
-    padding-bottom: 200px;
-    max-width: 100%;
-    text-align: center;
+	background-color: #56738c;
+	color: #f2ebec;
+	display: flex;
+	padding: 100px 30px;
+	padding-bottom: 200px;
+	max-width: 100%;
+	text-align: center;
 }
 
 #about h1 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .skills {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .skills h3 {
-    font-family: 'Raleway', sans-serif;
-    color: #56738C;
-    padding-bottom: 20px;
+	font-family: "Raleway", sans-serif;
+	color: #56738c;
+	padding-bottom: 20px;
 }
 
 .skills i {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    color: #56738C;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	color: #56738c;
 }
 
 #skillsIcon {
-    padding-top: 20px;
-    font-size: 45px;
+	padding-top: 20px;
+	font-size: 45px;
 }
 
 .skillsCard {
-    width: 80%;
-    min-height: 400px;
-    padding: 30px;
-    margin: 10px;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
+	width: 80%;
+	min-height: 400px;
+	padding: 30px;
+	margin: 10px;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
 }
 
 .skills .skillsCard {
-    transform: translateY(-100px);
-    background-color: #F2EBEC;
+	transform: translateY(-100px);
+	background-color: #f2ebec;
 }
 
 #portfolio {
-    min-width: 100%;
-    padding-right: 60px!important;
-    padding-left: 60px!important;
+	min-width: 100%;
+	padding-right: 60px !important;
+	padding-left: 60px !important;
 }
 
 small {
-    padding-top: 5px!important;
+	padding-top: 5px !important;
 }
 
 #portfolio h1 {
-    color: #56738C;
+	color: #56738c;
 }
 
 #portfolio h4 {
-    color: #afbdc9;
-    margin-bottom: 50px;
+	color: #afbdc9;
+	margin-bottom: 50px;
 }
 
 .gitLinks {
-    bottom: 0;
+	bottom: 0;
 }
 
 .btn {
-    background-color: #F2D0A7;
-    border: #F2D0A7;
-    color: #2182BF;
+	background-color: #f2d0a7;
+	border: #f2d0a7;
+	color: #2182bf;
 }
 
 .btn:hover {
-    color: #2182BF;
+	color: #2182bf;
 }
 
 #portfolio {
-    background: #F2EBEC;
-    margin-bottom: 50px;
+	background: #f2ebec;
+	margin-bottom: 50px;
 }
 
 #portfolio h3 {
-    font-size: 29px;
-    font-family: 'Volkhov', serif;
-    color: #56738C;
-    padding-left: 17px!important;
+	font-size: 29px;
+	font-family: "Volkhov", serif;
+	color: #56738c;
+	padding-left: 17px !important;
 }
 
 #portfolio a:hover {
-    color: #F2D0A7;
-    text-transform: uppercase;
-    background-color: #2182BF;
+	color: #f2d0a7;
+	text-transform: uppercase;
+	background-color: #2182bf;
 }
 
 #portfolio .card {
-    background-color: #F2EBEC;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
+	background-color: #f2ebec;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
 }
 
 small {
-    font-style: italic;
+	font-style: italic;
 }
 
 .card-title,
 .card-text {
-    padding-left: 1.25rem;
+	padding-left: 1.25rem;
 }
 
 h2 {
-    font-size: 35px;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 30px;
+	font-size: 35px;
+	font-family: "Raleway", sans-serif;
+	margin-top: 30px;
 }
 
 #words {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 #thankYou {
-    background-color: #56738C;
-    display: flex;
-    padding: 80px 30px;
-    padding-bottom: 160px;
-    justify-content: center;
+	background-color: #56738c;
+	display: flex;
+	padding: 80px 30px;
+	padding-bottom: 160px;
+	justify-content: center;
 }
 
 #contact {
-    text-align: center;
-    background:#23303a;
-    margin: auto;
-    font-size: 20px;
-    color: #F2EBEC;
-    transform: translateY(-100px);
-    width: 85%;
-    padding: 30px;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
-    min-height: 200px;
+	text-align: center;
+	background: #23303a;
+	margin: auto;
+	font-size: 20px;
+	color: #f2ebec;
+	transform: translateY(-100px);
+	width: 85%;
+	padding: 30px;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
+	min-height: 200px;
 }
 
 #contact i {
-    font-size: 35px;
-    padding: 30px;
+	font-size: 35px;
+	padding: 30px;
 }
 
 #contact a {
-    color:#F2EBEC;
-    text-decoration: gray;
+	color: #f2ebec;
+	text-decoration: gray;
 }
 
 #contact a:hover {
-    color: #56738C;
+	color: #56738c;
 }
 
 a:link {
-    color: #56738C;
-    text-decoration: none;
+	color: #56738c;
+	text-decoration: none;
 }
 
 a:hover {
-    color: #56738C;
+	color: #56738c;
 }
 
 p,
 a {
-    font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 #gitHub a:hover {
-    background-color: #F2EBEC;
-    color: #56738C;
+	background-color: #f2ebec;
+	color: #56738c;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    color: #56738C;
+#footer {
+	display: flex;
+	justify-content: center;
+	font-family: "Raleway", sans-serif;
+	color: #56738c;
+}
+
+#footer p {
+	opacity: 0.5;
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
-    header {
-        margin-bottom: 50px;
-    }
-    #intro {
-        margin-top: 20px;
-    }
-    #introLines {
-        margin-top: 70px;
-        text-align: center;
-    }
-    h1 {
-        font-size: 60px;
-    }
+	header {
+		margin-bottom: 50px;
+	}
+	#intro {
+		margin-top: 20px;
+	}
+	#introLines {
+		margin-top: 70px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 60px;
+	}
 
-    #portfolio {
-        padding-right: 15px!important;
-        padding-left: 15px!important;
-    }
+	#portfolio {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
 }
-
