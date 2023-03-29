@@ -237,7 +237,7 @@ h2 {
     border: 0;
     border-radius: 5px;
     box-shadow: 0 0 30px -5px hsl(0deg 0% 21% / 45%);
-    min-height: 200px;
+    min-height: 100px;
 }
 
 #contact i {
@@ -274,6 +274,7 @@ a {
 }
 
 footer {
+    padding: 15px;
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
