@@ -11,6 +11,7 @@
     --color-contact-bg: #23303a;
     --color-contact-text: #F2EBEC;
     --color-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.35);
+    --page-padding: clamp(20px, 6vw, 80px);
 }
 
 [data-theme="dark"] {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 header {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .navbar,
@@ -98,14 +99,27 @@ nav a:hover {
 
 #intro {
     width: 100%;
-    margin: auto;
-    padding: 120px 30px 40px;
-    min-height: 80vh;
+    margin: 0 auto;
+    padding: 80px var(--page-padding) 110px;
+    min-height: calc(100vh - 80px);
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+}
+
+.container#intro,
+#intro.container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+}
+
+#intro .row {
+    width: 100%;
+    margin: 0;
 }
 
 @keyframes bouncing {
@@ -117,11 +131,12 @@ nav a:hover {
 .arrow {
     font-size: 1.75rem;
     text-align: center;
-    animation: bouncing 1s infinite ease-in-out;
+    animation: bouncing 1.2s infinite ease-in-out;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
+    color: var(--color-accent-contrast);
 }
 
 h1 {
@@ -152,17 +167,25 @@ h1 {
 }
 
 section {
-    padding: 80px 30px;
+    padding: 80px var(--page-padding);
 }
 
 #about {
-    background-color: var(--color-section-bg);
-    color: var(--color-section-text);
+    background-color: #56738C;
+    color: #F2EBEC;
     text-align: center;
+    border-radius: 24px;
+    margin: 40px auto;
+    padding: 80px 40px;
+    max-width: min(1100px, calc(100% - 2 * var(--page-padding)));
 }
 
 #about h1 {
     margin-bottom: 20px;
+    color: var(--color-contact-bg);
+}
+\n#about .subtitle {
+    color: #F2EBEC;
 }
 
 .skills {
@@ -287,8 +310,8 @@ h2 {
 }
 
 #thankYou {
-    background-color: var(--color-section-bg);
-    color: var(--color-section-text);
+    background-color: #56738C;
+    color: #F2EBEC;
     display: flex;
     padding: 80px 30px 160px;
     justify-content: center;
@@ -297,6 +320,7 @@ h2 {
 
 #thankYou h1 {
     perspective: 600px;
+    color: var(--color-contact-bg);
 }
 
 @keyframes wordFlip {
@@ -412,4 +436,7 @@ footer {
         padding: 15px;
         font-size: 28px;
     }
+}
+#about h1 {
+    color: var(--color-contact-bg);
 }
