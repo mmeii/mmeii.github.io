@@ -123,6 +123,14 @@ h1 {
 #skillsIcon {
     padding-top: 20px;
     font-size: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skillsIcon i {
+    margin: 0 5px;
 }
 
 .skillsCard {
