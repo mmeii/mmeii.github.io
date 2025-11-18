@@ -5,6 +5,16 @@ import { ProjectCard } from './components/ProjectCard';
 import { SkillsCard } from './components/SkillsCard';
 
 export default function App() {
+  const getInitialTheme = () => {
+    if (typeof window === 'undefined') {
+      return 'light';
+    }
+    const stored = window.localStorage.getItem('theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+
+  const [theme, setTheme] = useState(getInitialTheme);
   const [word, setWord] = useState(ADJECTIVES[0]);
   const [isFlipping, setIsFlipping] = useState(false);
   const timeoutsRef = useRef([]);
@@ -44,6 +54,17 @@ export default function App() {
     };
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('theme', theme);
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <>
       <header className="container">
@@ -74,6 +95,15 @@ export default function App() {
                 Contact
               </a>
             </div>
+            <button
+              type="button"
+              className="btn btn-sm theme-toggle"
+              onClick={toggleTheme}
+              aria-pressed={theme === 'dark'}
+            >
+              <i className={`fas fa-${theme === 'dark' ? 'sun' : 'moon'}`} aria-hidden="true"></i>{' '}
+              {theme === 'dark' ? 'Light' : 'Dark'} mode
+            </button>
           </div>
         </nav>
       </header>
