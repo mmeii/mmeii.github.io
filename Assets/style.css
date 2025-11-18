@@ -215,6 +215,13 @@ h2 {
 
 #words {
     text-decoration: underline;
+    display: inline-block;
+    transform-origin: center;
+    will-change: transform, opacity;
+}
+
+#words.is-flipping {
+    animation: wordFlip 0.6s ease-in-out forwards;
 }
 
 #thankYou {
@@ -223,6 +230,30 @@ h2 {
     padding: 80px 30px;
     padding-bottom: 160px;
     justify-content: center;
+    text-align: center;
+}
+
+#thankYou h1 {
+    perspective: 600px;
+}
+
+@keyframes wordFlip {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    45% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    55% {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
 }
 
 #contact {
@@ -301,4 +332,3 @@ footer {
         padding-left: 15px!important;
     }
 }
-
